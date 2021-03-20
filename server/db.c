@@ -9,7 +9,7 @@ void MdbConnPool::InitPool( int size )
 	driver = get_driver_instance();
 	for( int i = 0; i < size; ++i )
 	{
-		auto con = driver->connect("tcp://127.0.0.1:3306", "root", "123");
+		auto con = driver->connect("tcp://127.0.0.1:3306", "cal", "123");
 		con->setSchema( "test" );
 		conns.push_back(con);
 	}
