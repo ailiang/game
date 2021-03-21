@@ -1,6 +1,6 @@
 CC=g++
 CPPFLAGS=-Wall -std=c++11 -ggdb
-LIB=-L../libs -lmuduo_base -lmuduo_net -lpthread -lmysqlcppconn
+LIB=-L../libs -lmuduo_base -lmuduo_net -lpthread -lmysqlcppconn -lcpp_redis -ltacopie
 INC=-I../incs
 
 SRC=$(wildcard *.c)
